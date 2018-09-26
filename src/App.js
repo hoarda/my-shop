@@ -8,19 +8,48 @@ function ShopItem(props) {
     </div>
   );
 }
+function Urunler(props) {
+  return (
+    <div>
+      <img src={props.img} />
+      <h4>{props.name}</h4>
+      <span style={{ color: "#ff9900" }}>{"★️".repeat(props.stars)}</span>
+      <br />
+      <span style={{ color: "#cc0000" }}>
+        EUR
+        {props.price}
+      </span>
+      <br />
+    </div>
+  );
+}
 
 function App() {
   return (
     <div>
       <h1>My Shop</h1>
       <ShopItem name="Books" />
+      <Urunler
+        img="https://images-eu.ssl-images-amazon.com/images/I/61AcOQyLg9L._AC_SY230_.jpg"
+        name="Meine schönsten Kinderlieder"
+        stars="5"
+        price="19,99"
+      />
+      <Urunler
+        img="https://images-eu.ssl-images-amazon.com/images/I/A19RGBZJ8nL._AC_SY230_.jpg"
+        name="Leckerschmecker - Die 100 Größten Hits"
+        stars="3"
+        price="18,90"
+      />
+      <ShopItem name="Cup" />
+      {/* <ShopItem name="Books" />
       <img src="https://images-eu.ssl-images-amazon.com/images/I/61AcOQyLg9L._AC_SY230_.jpg" />
       <h4>Meine schönsten Kinderlieder</h4>
       <span style={{ color: "#ff9900" }}>{"★️".repeat(5)}</span>
       <br />
       <span style={{ color: "#cc0000" }}>{"EUR 19,99"}</span>
-      <br />
-      <img src="https://images-eu.ssl-images-amazon.com/images/I/A19RGBZJ8nL._AC_SY230_.jpg" />
+      <br /> */}
+      {/* <img src="https://images-eu.ssl-images-amazon.com/images/I/A19RGBZJ8nL._AC_SY230_.jpg" />
       <h4>Leckerschmecker - Die 100 Größten Hits</h4>
       <span style={{ color: "#ff9900" }}>{"★️".repeat(3)}</span>
       <br />
@@ -31,7 +60,7 @@ function App() {
       <h4>Arcoroc 33027 Baril</h4>
       <span style={{ color: "#ff9900" }}>{"★️".repeat(5)}</span>
       <br />
-      <span style={{ color: "#cc0000" }}>{"EUR 11,70"} </span>
+      <span style={{ color: "#cc0000" }}>{"EUR 11,70"} </span> */}
     </div>
   );
 }
