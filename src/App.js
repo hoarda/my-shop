@@ -14,6 +14,8 @@ function App() {
     <div>
       <h1>My Shop</h1>
       <ShopItem name="Books" />
+      <img src="https://images-eu.ssl-images-amazon.com/images/I/61AcOQyLg9L._AC_SY230_.jpg" />
+      <h3>Meine schönsten Kinderlieder </h3>
     </div>
   );
 }
