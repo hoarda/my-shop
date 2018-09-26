@@ -20,6 +20,7 @@ function Urunler(props) {
         {props.price}
       </span>
       <br />
+      <br />
     </div>
   );
 }
@@ -41,26 +42,13 @@ function App() {
         stars="3"
         price="18,90"
       />
-      <ShopItem name="Cup" />
-      {/* <ShopItem name="Books" />
-      <img src="https://images-eu.ssl-images-amazon.com/images/I/61AcOQyLg9L._AC_SY230_.jpg" />
-      <h4>Meine schönsten Kinderlieder</h4>
-      <span style={{ color: "#ff9900" }}>{"★️".repeat(5)}</span>
-      <br />
-      <span style={{ color: "#cc0000" }}>{"EUR 19,99"}</span>
-      <br /> */}
-      {/* <img src="https://images-eu.ssl-images-amazon.com/images/I/A19RGBZJ8nL._AC_SY230_.jpg" />
-      <h4>Leckerschmecker - Die 100 Größten Hits</h4>
-      <span style={{ color: "#ff9900" }}>{"★️".repeat(3)}</span>
-      <br />
-      <span style={{ color: "#cc0000" }}>{"EUR 18,90"}</span>
-
-      <ShopItem name="Cup" />
-      <img src="https://images-eu.ssl-images-amazon.com/images/I/31CjxQ5OzML._AC_US218_.jpg" />
-      <h4>Arcoroc 33027 Baril</h4>
-      <span style={{ color: "#ff9900" }}>{"★️".repeat(5)}</span>
-      <br />
-      <span style={{ color: "#cc0000" }}>{"EUR 11,70"} </span> */}
+      <ShopItem name="Cups" />
+      <Urunler
+        img="https://images-eu.ssl-images-amazon.com/images/I/31CjxQ5OzML._AC_US218_.jpg"
+        name="Arcoroc 33027 Baril"
+        stars="2"
+        price="11,70"
+      />
     </div>
   );
 }
