@@ -24,7 +24,14 @@ function App() {
       <h4>Leckerschmecker - Die 100 Größten Hits</h4>
       <span style={{ color: "#ff9900" }}>{"★️".repeat(3)}</span>
       <br />
-      <span style={{ color: "#cc0000" }}>{"EUR 19,99"}</span>
+      <span style={{ color: "#cc0000" }}>{"EUR 18,90"}</span>
+
+      <ShopItem name="Cup" />
+      <img src="https://images-eu.ssl-images-amazon.com/images/I/31CjxQ5OzML._AC_US218_.jpg" />
+      <h4>Arcoroc 33027 Baril</h4>
+      <span style={{ color: "#ff9900" }}>{"★️".repeat(5)}</span>
+      <br />
+      <span style={{ color: "#cc0000" }}>{"EUR 11,70"} </span>
     </div>
   );
 }
